@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Help</class>
+ <widget class="QDialog" name="Help">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>780</width>
+    <height>630</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>780</width>
+    <height>630</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>780</width>
+    <height>630</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Help</string>
+  </property>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>761</width>
+     <height>601</height>
+    </rect>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>759</width>
+      <height>599</height>
+     </rect>
+    </property>
+    <widget class="QLabel" name="rulesTitle">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string>Sudoku rules: </string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="rules">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>40</y>
+       <width>711</width>
+       <height>261</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Sudoku is a logic-based number placement puzzle. The objective of the puzzle is to fill a 9x9 grid with digits so that each column, each row, and each of the nine 3x3 sub-grids (also known as boxes or regions) contains all of the digits from 1 to 9. The rules for solving a Sudoku puzzle are as follows: 
+
+      1. Each row of the 9x9 grid must contain all of the digits from 1 to 9.
+      2. Each column of the 9x9 grid must contain all of the digits from 1 to 9.
+      3. Each of the nine 3x3 sub-grids of the 9x9 grid must contain all of the digits from 1 to 9.
+      4. Each digit can only appear once in each row, column, and 3x3 sub-grid.
+      5. Some cells in the grid may already be filled with numbers. These are called &quot;givens&quot;. The solver's goal is to fill in the remaining cells with digits from 1 to 9 so that the above rules are satisfied. 
+
+It's important to note that a valid Sudoku puzzle has only one unique solution.
+
+</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="useTitle">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>310</y>
+       <width>191</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string>How to use the app:</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="use">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>340</y>
+       <width>711</width>
+       <height>491</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Opening the app, you are shown the main window, which consists of: the tools menu, the board, the
+mistakes counter and the &quot;Generate&quot; menu.
+
+To start playing you have to either click on &quot;Generate&quot; and select the type of game you want to
+play or click on the tools menu button and then click on the first button (open button) which opens
+up a Windows File Dialog where you can search for the file you want to open. This file should be a
+text file that contains of matrix of numbers from 0 to 9 displyed in a sudoku grid: 9 lines, each
+of them containing 9 numbers with a space in between. If a number is 0, the board will leave that
+cell empty, otherwise it will put the number in the cell and disable the editing of that cell.
+
+In each game you are allowed to make 2 mistakes and when you make the third one, the board will be
+cleared and you will be shown a message box telling you that you have made too many mistakes.
+The numbers you have entered correctly will be displayed with a light blue color and the wrong ones
+with a red one.
+
+Once you have completed the board, you are shown a message box asking you whether you want the 
+board to be cleared or not.
+
+If you want to quit and save the game you were working at click the second button in the tools menu
+(save button) and it will open up a Windows Save File Dialog where you can select the path where
+you want to save the file and its name and it will generate a text file with the format mentioned
+above.
+
+The third button in the tools menu is the clear button and it clears the board, bringing it to the
+initial state.
+
+The fourth button in the tools menu is the quit button.
+
+The fifth in the tools menu is the help button, which opens up this window.</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
